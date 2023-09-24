@@ -8,6 +8,3 @@ def first_digit(x):
             if x//10==0:
                 test=True
     return(x)
-a=int(input())
-e=first_digit(a)
-print(e,a)
