@@ -1,5 +1,5 @@
 import numpy
-def destinct(x,t,n):
+def distinct(x,t,n):
     test=True
     i=0
     while test and i<n:
@@ -12,6 +12,6 @@ a=int(input("Table size: "))
 t=numpy.array([int]*a)
 for i in range(a):
     t[i]=int(input("t["+str(i)+"]="))
-    while destinct(t[i],t,i)==False:
+    while distinct(t[i],t,i)==False:
         t[i]=int(input("you have already written this number,try again please:"))
 print(t)
