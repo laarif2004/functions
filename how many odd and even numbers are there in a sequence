@@ -1,0 +1,13 @@
+a=input("write a sequence ")
+o=0
+e=0
+j=0
+while j<=len(a)-1:
+    if not(a[j]in{",","{","}"}):
+        if int(a[j])%2==0:
+            e=e+1
+        else:
+            o=o+1
+    j=j+1
+print("even:",e)
+print("odd:",o)
